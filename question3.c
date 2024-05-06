@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main(){
-    char str[]="welcome to jenny's lecture";
+    char str[]="welcome to jerry's lecture";
     char *ptr=str;
     printf("%c\n",*ptr);
     printf("%c\n",*(ptr++ +1));
