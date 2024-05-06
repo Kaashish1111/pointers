@@ -1,29 +1,12 @@
-#include<stdio.h>
-int main()
+#include <stdio.h>
+int sum(int a, int b)
 {
-    int a,b,c;
-    printf("Enter the value of a,b,c\n");
-    scanf("%d%d%d",&a,&b,&c);
-
-    if(a>b)
-    {
-        if(a>c)
-        {
-            printf("a is greater");
-        }
-        else
-        {
-            printf("c is greater");
-        }
-    }
-    else{
-        if(b>c)
-        {
-            printf("b is greater");
-        }
-        else
-        {
-            printf("c is greater");
-    }
-    }
+    return a + b;
+}
+int main(){
+    int s=0;
+    int (*ptr)(int, int) = &sum;
+    s = (*ptr)(10, 20);
+    printf("sum is %d\n", s);
+    return 0;
 }
