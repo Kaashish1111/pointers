@@ -3,13 +3,13 @@ void add(int a,int b){
     printf("sum is %d",a+b);
 }
 void sub(int a,int b){
-    printf("sub is %d",a-b);
+    printf("subtraction is %d",a-b);
 }
 void mul(int a,int b){
-    printf("mul is %d",a*b);
+    printf("multiplaction is %d",a*b);
 }
 void div(int a,int b){
-    printf("div is %d",a/b);
+    printf("divison is %d",a/b);
 }
 int main(){
     int value;
